@@ -1,0 +1,930 @@
+*{ box-sizing: border-box; }   /*margin - is not calculated*/
+head {
+	position: absolute;	
+	
+}
+html {
+  min-width: 780px;
+}
+
+body {
+  margin: 0;
+  border: 0; 
+  padding: 0; 
+  position: relative; 
+  top: 0px;
+  min-width: 790px; /* 142*4 changing 142 to 180 *4+60*/
+  max-width: 4000px; 
+
+ /*overflow-y:hidden;  */ /* убрать полосу подкрутки */ 
+}
+ /* Repeat for Reinforcement / F5 - problem*/
+.topmenu {    
+  /*vertical-align: top 50%; *//*opacity: 0.85;*/  
+   top: 0px;
+   display: inline-block; 	 
+   vertical-align: middle;
+   min-width: 790px;    
+}
+
+
+header {
+	margin: 0;
+	border: 0;
+	padding: 0; 
+	position: relative; 		
+	/*background: rgba(0, 200, 200, 1);*/
+	height: 135px; /*from 115 to 135*/ 
+	max-width: 1260px;	
+    }
+
+.but1
+{
+	margin: 14px;
+	/*border: 5px;*/
+	/*padding: 25px;*/
+	/*background: linear-gradient(to top, rgba(0,0,150,0.8) 10%, rgba(0,0,204,0.8) 25% , rgba(0,0,255,0.8) 40%, rgba(0,0,255,0.8) 60%, rgba(0,0,255,0.8) 75%, rgba(0,0,150,0.8));
+			*/
+		 height: 45px;
+		 width: 165px;
+	     background:	rgba(30,144,255,1);
+		 border-radius: 10px;
+		 border: none;
+		 color: white;
+		 font-family: Play-Bold;
+		 font-size: 15px; /* 18--> 30 */
+		 font-weight: bold;  	
+		
+}
+.but1:hover {
+	background:	rgba(0,180,255,1);
+}
+
+.mainte {
+	 display: inline-block;
+	 margin-top: 10px;
+	 font-family: Play-Bold;
+	 font-size: 18px;
+	 font-weight: bold;  	
+	 text-decoration: none;
+}
+
+nav a {	 
+  text-decoration: none;
+  outline: none;
+  display: block; /*it needs to be separated from upper logo-line*/
+  /*transition: 2.5s ease-in-out;*/ /* постепенное изменение цвета надписи пункта меню */
+}
+/*.logo {
+  color: #D5B45B;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  padding: 20px 0;
+}*/
+nav {
+	 top: 0px;
+	 margin: 0;/*margin: 0 auto исправлю на 0 */
+	 border: 0;/* */
+	 padding: 0; /* */
+	 position: relative;    	
+	 display: table;
+	 max-height: 55px;	 
+	  max-width: 1260px; 
+}
+.navpic {
+	position: relative;
+	margin: 0;
+	border: 0;/**/
+	padding: 0; /* */	
+}
+	
+nav ul {
+  list-style: none; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  /*list-style: square;  !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  /*list-style-image: url(index-0_files/mark.png);
+  it works but minmenu :)))*/
+  margin: 0;
+  padding: 0;
+  border: 0;    
+}
+
+
+
+.one {
+border-color: red;
+color: blue;
+display: inline;
+}
+.two {
+border-color: red;
+color: blue;
+display: inline;
+}
+.three {
+border-color: red;
+color: blue;
+display: inline;
+float: right;
+}
+
+/*.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+.topmenu {    
+  /*vertical-align: top 50%; *//*opacity: 0.85;*/  
+   top: 0px;
+   display: inline-block; 	 
+   vertical-align: middle;
+   min-width: 790px;
+   
+   
+   
+}
+.topmenext {    
+	/* top: -59px; */ 
+	display: inline-block; 
+	
+}
+.topmenu > li {
+  width: 180px; /* 14.286% было */ /* лефт, ширину и позишн - оставить*/
+  height: 55px;
+  float: left; /* it was left */
+  position: relative; /* need to be absolute but is obstructed this way */   
+}
+.topmenu > li > a { /* дочерний селектор ">" */
+	padding-top: 3px;  
+  text-transform: uppercase;
+  font-family: Play-Bold;
+  font-size: 18px; /* 18--> 30 */
+  font-weight: bold;  /*text-shadow: 0 0 2px rgba(0,0,0,0.5);/**/   
+  color: rgba(180,240,255,0.95); /**/
+    /*text-align: right; /* works */
+  vertical-align: bottom;
+    /*padding: 10px; inserted*/ /* background: #101010;  inserted /**/ /* черный для семи - бэкграунд убрал*/ 
+}
+/*nav ul.topmenu li.mm a { list-style: square; }
+nav ul li a { list-style: square; }  */
+/*.topmenu li.mm a  { /* it works!!! ))) */
+/* list-style: square; /* doesnt work  */
+ /*font-size: 14px; /* works */ /* 
+ } */
+
+.topmenu li a:hover { text-shadow: 0 0 8px white;
+color: white; } /*there will be pics*/
+
+/*.submenu-link:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 8px;
+}*/
+
+.sub-m, .sub-m1, .sub-m2, .sub-m3, .sub-m4, .c5, .c6, .c7 { /* прозрачно кликабельно */
+		position: relative;/**/
+  		z-index: 3; /* */		
+		background: linear-gradient(to top, transparent 60%,rgba(200,200,200,0.001) 60%, rgba(200,200,200,0.3) 70%, rgba(200,200,200,0.5) 80%, rgba(200,200,200,0));			
+		border-left: 1px solid rgba(170,170,170,0.3); /* */	
+			
+}
+.c7 { 
+		z-index: 3; /* */		
+		border-right: 1px solid rgba(170,170,170,0.3);
+	
+		}		
+.sub-md, .sub-md1,.sub-md2, .sub-md3, .sub-md4, .c5d, .c6d, .c7d {	
+		top: -55px; /**/
+		/*top: inherit; */		
+		position: relative;				
+		z-index: 1;
+		background: linear-gradient(to top, rgba(0,0,150,0.8) 10%, rgba(0,0,204,0.8) 25% , rgba(0,0,255,0.8) 40%, rgba(0,0,255,0.8) 60%, rgba(0,0,255,0.8) 75%, rgba(0,0,150,0.8));
+
+}
+ .topmenu .mm { /* прозрачно кликабельно */
+	 position: relative;
+	 width: 60px;
+	 background: linear-gradient(to top, transparent 60%,rgba(200,200,200,0.001) 60%, rgba(200,200,200,0.3) 70%, rgba(200,200,200,0.5) 80%, rgba(200,200,200,0));
+     z-index: 3;	 
+	 border-left: 1px solid rgba(170,170,170,0.3); /**/
+	 border-right: 1px solid rgba(170,170,170,0.3); /**/
+
+}
+ .topmenu .mmd {	
+	 top: -55px; /**/ 
+	 
+	 position: relative;
+	 width: 60px;	 
+	 background: linear-gradient(to top, rgba(0,0,150,0.8) 10%, rgba(0,0,204,0.8) 25% , rgba(0,0,255,0.8) 40%, rgba(0,0,255,0.8) 60%, rgba(0,0,255,0.8) 75%, rgba(0,0,150,0.8));
+     z-index: 1; /**/   
+	
+}
+
+.artshow {
+	 position: relative;
+	 top: -55px; /*  -55px   */ 	
+ }
+
+.submenu {
+  background: #273037;
+  position: absolute; /* было абсолют, поменял*/
+  left: 0;
+  top: 100%;
+    width: 360px;
+  opacity: 0;
+  transform: scaleY(0);/* тут нельзя убирать */
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+} 
+/* squared particles - on the left and right */
+.sqleft {	
+	 position: relative;
+	 
+	 background: linear-gradient(to top, transparent 60%,rgba(200,200,200,0.001) 60%, rgba(200,200,200,0.3) 70%, rgba(200,200,200,0.5) 80%, rgba(200,200,200,0));	 
+	 z-index: 3; /* */	       
+     /*background-color: red;	*/ 
+}
+.sqleftd {	
+	 top: -55px; /*	 */	 
+	 position: relative;
+	 background: linear-gradient(to top, rgba(0,0,150,0.8) 10%, rgba(0,0,204,0.8) 25% , rgba(0,0,255,0.8) 40%, rgba(0,0,255,0.8) 60%, rgba(0,0,255,0.8) 75%, rgba(0,0,150,0.8));
+     z-index: 1; /* */     
+}
+.sqright {	
+	 position: relative;
+	 background: linear-gradient(to top, transparent 60%,rgba(200,200,200,0.001) 60%, rgba(200,200,200,0.3) 70%, rgba(200,200,200,0.5) 80%, rgba(200,200,200,0));	 
+	 z-index: 3; /* */	       
+     /*background-color: red;	*/ 
+}
+.sqrightd {	
+	 top: -55px; /*	 */	 	 
+	 position: relative;
+	 background: linear-gradient(to top, rgba(0,0,150,0.8) 10%, rgba(0,0,204,0.8) 25% , rgba(0,0,255,0.8) 40%, rgba(0,0,255,0.8) 60%, rgba(0,0,255,0.8) 75%, rgba(0,0,150,0.8));
+     z-index: 1; /* */     
+}
+.submenuAdd {
+  background: #273037;/*  */
+  position: absolute;
+  left: -301px; /* похоже линии вертикальные между 180 имеют значение*/
+  top: 100%;
+  /*z-index: 3;*/
+  width: 360px;
+  opacity: 0;
+  transform: scaleY(0);/* тут нельзя убирать */
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+
+.submenu a {
+  /*color: */
+  /*text-align: center;*/
+  padding: 12px 15px;
+  font-size: 18px;
+  color: rgba(180,240,255,0.95);
+  text-align: left; /* it works*/
+  border-bottom: 1px solid rgba(255,255,255,.1);  
+}
+.submenuAdd a { 
+  padding: 12px 15px;
+  font-size: 18px;
+  color: rgba(180,240,255,0.95);
+  text-align: left; /* it works*/
+  border-bottom: 1px solid rgba(255,255,255,.1);  
+}
+
+/*.submenu li:last-child a { border-bottom: none; }*/
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);/*тут вообще ничо не выскочит елси убрать*/
+}
+
+.topmenu > li:hover .submenuAdd {
+  opacity: 1;
+  transform: scaleY(1);/*тут вообще ничо не выскочит елси убрать*/
+}
+
+/* слайдшоу */
+
+@keyframes move {
+   0% { transform: translateX(0); }
+   100% { transform: translateX(100%); }
+} 	
+  
+ /*  slideshow from https://html5css.ru/howto/howto_js_slideshow.php*/
+ 
+ /* Slideshow container */
+.slideshow-container {
+  max-width: 1260px; /*must have there (artshow----slideshow-container-----myslides)*/ 
+  height: 350px;/*must have! 07-09-2020 (for dots)*/
+  position: relative;
+  margin: auto;
+  overflow: hidden;/**/   
+}
+.clients-container {
+  max-width: 1260px; /*must have there (artshow----slideshow-container-----myslides)*/ 
+  height: 200px;/**/
+  position: relative;
+  margin: auto;
+  overflow: hidden;/**/   
+}
+/* Hide the images by default */
+.mySlides {
+	 position: relative;
+     display: none;
+	  /* 1260   */	
+}
+.clogo {	
+transition: transform 3000ms ease-in-out 1s; /**/
+transform: translate(0px, 0px);
+	 position: absolute; 
+     /* display: none;   */	 
+	 top: 70px;
+	 float: left;
+	 text-align: center;
+	 alignContent: center;
+	 /*background-color: grey; */
+	 opacity: 1.00;	 
+}
+
+.logshift { 
+transition: transform 100ms ease-in-out 1s;/**/
+transform: translate(100px, 0px);
+}
+.logshift2 { 
+transition: transform 3000ms ease-in-out 1s;
+transform: translate(300px, 0px);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  /* cursor: crosshair;*/
+  position: absolute;
+  top: 50%;
+  width: auto;
+  /* margin-top: -190px;*/
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	position: relative;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  /* afterlife */
+  
+  /*
+  <style>
+@font-face {
+font-family: 'Play-Bold';
+src: url('/fonts/p/Play-Bold.ttf');
+}
+.text_effect {
+font-family: 'Play-Bold';
+color: rgb(255, 145, 145);
+font-size: 36px;
+background-color: rgb(255, 255, 255);
+text-shadow: rgb(3, 3, 3) 0px 0px 0px;
+}
+</style>
+  how to insert FONT*/
+ 
+@font-face {
+font-family: Play-Bold;
+src: url(fonts/Play-Bold.ttf);
+}
+.mainnav
+{
+font-family: Play-Bold;
+}
+
+ /* */ 
+
+     .svg-polyg 	{	    /*  *//* exactly 55 px make this white space between <article> and svg1   */
+			     transform:  scale(2);						
+			     fill: white; 
+				 stroke: #00BF32;
+				 stroke-width: 3px;
+				 position: relative;				
+	}	
+	
+	 .svg-lines 	{
+			    transform: scale(2);	
+				 fill: white; 
+				 stroke: #00BF32;
+				 stroke-width: 3px;
+				 position: relative;				
+	}	
+	 .svg-t {				
+				 position: relative;/**/
+				 font-family: Play-Bold; 		
+				 font-size: 21px;
+				 font-weight: bold;
+			     color: #001188; /* синюшный шрифт*/
+				 text-align: center;
+				 width: 220px;	/* 1260- ?  */
+				 				
+				 margin:0;				
+				 padding:0;					
+				 /*border-width: 1px;*/				
+	}
+	
+	
+	
+	
+	
+	.basic {font-family: Verdana;
+			max-width:1620px;
+	}
+	 
+	  .forerun { /* Временно! ОТКЛ ючаю вращающиеся преимущества*/
+		 left: 0px;
+		 position: relative;
+		 margin:0;				
+		 padding:0;
+		 border:0;
+	 		left: 50%;	
+		 height: 180px; /* repeat of roticon lower */
+		 /*width: 220px;	*/	 
+		 /*display:none; /* Временно! ОТКЛ ючаю вращающиеся преимущества*/
+		 transform: scale(0.85);
+		 transform: translateX(-.3%);
+	 }
+	 .revicon
+	 {	 position: absolute;
+		 left:-110px; /*	*/
+	     top: -20px; /**/	 		 
+		 /* need to lift up the line of icons */		
+		 /*  float: left; /* copy of ".topmenu > li" */		 
+		 height: 245px; /* почему то не 90+135 а 245,,, */
+		 width: 220px;	
+         /* background-color: RGB(0 220 200);*/
+		 vertical-align: top;
+		 
+	 }
+	 
+	  .i1 {	 
+			transform-origin: 50% 50%;			
+			transform: perspective(800px) rotateY(-20deg) translateX(-250%);		
+		}	 
+	  .i2
+	 {	 }	 	 
+	  .i3 {	 			
+			transform-origin: 50% 50%;
+			transform: perspective(800px)   rotateY(20deg) translateX(250%); 				
+		}	 
+	  .i4 {		 
+		 transform: perspective(800px) rotateY(40deg) translateX(760%) ;
+		 transform-origin: 50% 50%;	 
+		 opacity:0;
+	 }
+	  .i5 {		 
+		 transform: perspective(800px) rotateY(-40deg) translateX(-760%) ;
+		 transform-origin: 50% 50%;	 
+		 opacity:0;
+	 }	
+	
+	
+/* --- BEGIN --- Rotating Icons  */
+/*******/
+.moveicon1 { /*  */
+ -webkit-animation-name: moveicon1 12s infinite; 
+ animation: moveicon1 12s infinite; 
+  -webkit-animation-timing-function:  ease-in-out;
+   animation-timing-function:  ease-in-out;
+     
+}
+.moveicon2 { /*  */
+  -webkit-animation-name: moveicon2 12s infinite; 
+  animation: moveicon2 12s infinite; 
+  -webkit-animation-timing-function:  ease-in-out;
+  animation-timing-function:  ease-in-out;  
+}
+.moveicon3 { /*  */
+ -webkit-animation-name: moveicon3 12s infinite; 
+  animation: moveicon3 12s infinite; 
+  -webkit-animation-timing-function:  ease-in-out;
+  animation-timing-function:  ease-in-out;  
+}
+.moveicon4 { /*  */
+  -webkit-animation-name: moveicon4 12s infinite; 
+  animation: moveicon4 12s infinite; 
+  -webkit-animation-timing-function:  ease-in-out;
+  animation-timing-function:  ease-in-out;  
+}
+.moveicon5 { /*  */
+  -webkit-animation-name: moveicon5 12s infinite; 
+  animation: moveicon5 12s infinite; 
+  -webkit-animation-timing-function:  ease-in-out;
+  animation-timing-function:  ease-in-out;  
+}  
+  /*
+  @keyframes moveicon1
+*/
+
+  @-webkit-keyframes moveicon1 {    	
+    0% { 
+            		 		 
+		 transform: perspective(800px) rotateY(-20deg) translateX(-250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;  			 			 
+		}	
+    20% {
+         transform: perspective(800px) rotateY(0deg) translateX(0%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}	
+    40% {
+		 transform: perspective(800px)  rotateY(20deg) translateX(250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}	
+	60% {
+	     transform: perspective(800px)  rotateY(40deg) translateX(760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}		
+	80% {
+	     transform: perspective(800px) rotateY(-40deg) translateX(-760%) ;
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}				
+	100% { /*    */
+         transform: perspective(800px) rotateY(-20deg) translateX(-250%) ;
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}		
+	}
+  @-webkit-keyframes moveicon2 {    
+    0% {
+         transform: perspective(800px) translateX(0%) rotateY(0deg);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+    }	
+    20% {		
+		 transform: perspective(800px)  rotateY(20deg) translateX(250%);
+			 transform-origin: 50% 50%;
+			 opacity: 1;			 
+    }	
+	40% {
+	    	transform: perspective(800px)  rotateY(40deg) translateX(760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+    }	
+	60% {
+	    	transform: perspective(800px)  rotateY(-40deg) translateX(-760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+    }		
+	80% { /*    */
+			transform: perspective(800px)  rotateY(-20deg) translateX(-250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;             
+    }		
+	100% { /*    */
+         transform: perspective(800px)  rotateY(0deg) translateX(0%);
+			 transform-origin: 50% 50%;
+			 opacity: 1;
+		}			
+	}
+  @-webkit-keyframes moveicon3 {  	
+    0% {		
+		 transform: perspective(800px) rotateY(20deg) translateX(250%);
+		transform-origin: 50% 50%;
+		 opacity: 1;			 
+		}	
+	20% {
+	     transform: perspective(800px) rotateY(40deg) translateX(760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}	
+	40% {
+	     transform: perspective(800px) rotateY(-40deg) translateX(-760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}		
+	60% { /*    */
+		 transform: perspective(800px) rotateY(-20deg) translateX(-250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;             
+		}		
+	80% { /*    */
+         transform: perspective(800px) rotateY(0deg) translateX(0%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}
+	100% {
+         transform: perspective(800px) rotateY(20deg) translateX(250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}		
+	}  
+@-webkit-keyframes moveicon4 { 	
+	0% {
+	     transform: perspective(800px) rotateY(40deg) translateX(760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}	
+	20% {
+	     transform: perspective(800px) rotateY(-40deg) translateX(-760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}		
+	40% { /*    */
+		 transform: perspective(800px) rotateY(-20deg) translateX(-250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;             
+		}		
+	60% { /*    */
+         transform: perspective(800px) rotateY(0deg) translateX(0%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}
+	80% {
+         transform: perspective(800px) rotateY(20deg) translateX(250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}
+	100% {		
+		  transform: perspective(800px) rotateY(40deg) translateX(760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;			 
+		}			
+	}
+@-webkit-keyframes moveicon5 { 		
+	0% {
+	     transform: perspective(800px) rotateY(-40deg) translateX(-760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}		
+	20% { /*    */
+		 transform: perspective(800px) rotateY(-20deg) translateX(-250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;             
+		}		
+	40% { /*    */
+         transform: perspective(800px) rotateY(0deg) translateX(0%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}
+	60% {
+         transform: perspective(800px) rotateY(20deg) translateX(250%);
+		 transform-origin: 50% 50%;
+		 opacity: 1;
+		}	
+
+	80% {		
+		  transform: perspective(800px) rotateY(40deg) translateX(760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;			 
+		}
+	100% {
+	     transform: perspective(800px) rotateY(-40deg) translateX(-760%);
+		 transform-origin: 50% 50%;
+		 opacity: 0.0;
+		}			
+	}
+
+
+
+	
+	 
+		.micons 
+		{  max-width: 1260px; /* */
+	      position: relative;
+		  display: block;
+		}	 
+		.maindir 
+		{ /*background-color: grey; */
+		 display: inline-block;
+		  display: none; /* времмено ОТКЛючаю иконки с направлениями */		 
+		}		
+		
+	.maindir:hover {        
+	 -webkit-animation-name: maindirscale 1s ; 
+	 animation: mdscale 1s ;
+	 /*animation-timing-function:  ease-out; */
+	 /* background-color: green; */
+	 animation-fill-mode: forwards;
+
+	}
+		
+			@keyframes mdscale {
+				from {	transform: scale(1.0);								
+				}		
+			to {	transform: scale(1.07);						
+					} 		
+			}				
+							
+						
+		/*	.maindir:after {		
+		display: block;				
+		} */
+		
+		
+	 .maindir-svg {	  
+				 transform: scale(2);		
+				 fill: #36BBCE; 
+				 stroke: #36BBCE;
+				 stroke-width: 3px;
+				 position: relative;
+				 stroke: linear-gradient(to top, transparent 60%,rgba(200,200,200,0.001) 60%, rgba(200,200,200,0.3) 70%, rgba(200,200,200,0.5) 80%, rgba(200,200,200,0));	 		
+	 }	 
+	  .signred
+	 {fill: #E60042;
+	 stroke: #E60042;
+	  }
+	  .blackadd
+	 {
+	 stroke: black; /*  grey #605F62*/
+	 stroke-width: 1.8px;	
+	  }
+	 .signtext {	  
+				 /*fill: #36BBCE;*/	 
+				 font-size: 3.9pt;
+				 transform: scale(2);				
+				 font-weight: bold;		
+                 color: red;/*#36BBCE; */	
+				/* background-color: red; */					
+				 stroke-width: 5px;				
+	 }	
+	 .signtext2 {	 	 
+				 font-size: 5.4pt;
+				 transform: scale(2);				
+				 font-weight: bold;		
+                 color: black;					 			
+				 stroke-width: 5px;					 
+	 }	
+	 .signtext3 {	 	 
+				 font-size: 4.5pt;
+				 transform: scale(2);				
+				 font-weight: bold;		
+                 color: black;					 			
+				 stroke-width: 5px;					 
+	 }	
+	 .signtext4 {
+		 font-size: 10px;
+		 font-weight: bold;	
+		 font-family: Play-Bold; 	 
+	     fill: #00BF32;		
+		 transform: scale(2);	 
+	 }
+	 .signtext5 {
+		 font-size: 6px;
+		 font-weight: bold;	
+		 font-family: Play-Bold; 	 
+	     fill: #00BF32;		
+		 transform: scale(2);	 
+		 stroke-width:1px;
+	 }
+	 .signtext6 {
+		 font-size: 10px;
+		 font-weight: bold;	
+		 font-family: Play-Bold; 	 
+	     color: black;		
+		 transform: scale(2);	 
+	 }
+	 .w {	  				 		
+				 fill:white; 					
+	 }	 
+		 
+	 .lired {
+		 stroke: crimson;
+	     stroke-width:0px;
+		 fill: #FFE3EF; 
+		 background: linear-gradient(to right, rgba(255,2,80,0.5) 0%, rgba(255,2,80,0.1) 100% );
+    		 }
+	 .blacknar
+	 {           transform: scale(2);				  
+				 stroke: black;
+				 stroke-width: 2px;	
+ 	 }
+	.st-green {
+	  stroke-width: 3px;
+	  transform: scale(2);
+	  /*fill:white;*/
+	  stroke: #00BF32; /*light-green*/	
+	}	
+	.bigtext {stroke-width: 3px;
+	 font-family: Play-Bold; 	
+	 font-size: 26pt;
+	 font-weight: bold;
+	 transform: translate(130px, 25px);
+	 fill:#00BF32;
+	 stroke: #00BF32; 	 
+	}
+	
+	.bigtext2 {stroke-width: 1px;
+	 font-family: Play-Bold; 	
+	 font-size: 14pt;	  
+	 transform: translate(110px, 30px);
+	 fill:#00BF32;
+	 stroke: #00BF32; 
+	}
+	
+	.hmaintext {
+	margin-top: 35px;
+	font-family: Verdana;
+	font-size: 20pt;
+	max-width: 1260px;
+	font-weight: bold;
+	display:block;
+	}
+	.maintext {
+	font-family: Verdana;
+	font-size: 16pt;
+	max-width: 1260px;
+	}
+	
+  ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: -60px;
+	/* width: 50px; */   
+			background-color: #ef6780;
+	/*text-align: center;
+	font-size: 40px;
+	font-weight: bold; */
+}
+
+ul li {
+	
+}
+
+.tested {color:green}
+
+
+/********/
+/* so... doors animation --- END --- */
+/*.R { font: bold italic 20px serif; fill: blue; font-family: Play-Bold; }*/
+
+/*----------------------------------------------------*/
+/* Icons for main directions */
